@@ -1,0 +1,99 @@
+/* General body styling */
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background-color: black; /* Black background */
+    color: aqua; /* Turquoise text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    flex-direction: column; /* Stack content vertically */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Scrolling text using CSS */
+.scrolling-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 20px;
+}
+
+.scrolling-text h1 {
+    font-size: 2em;
+    position: absolute;
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+/* Styling for oval image */
+.oval-image {
+    width: 380px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+/* Styling for h2 and h3 headers */
+h2 {
+    color: rgb(62, 210, 210); /* Turquoise color */
+    font-style: italic;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+h3 {
+    color: aqua; /* Turquoise color */
+    font-style: italic;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Event details styling */
+.event-details p {
+    color: aqua; /* Turquoise color */
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Styling for links */
+.links {
+    color: rgb(125, 216, 205); /* Light turquoise */
+    font-size: x-large;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.links:hover {
+    color: white; /* White color on hover */
+    text-decoration: underline;
+}
+
+/* Flexbox container to center everything */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+p, h1, h2, h3, .links {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Light shadow for better visibility */
+}
