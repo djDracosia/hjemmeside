@@ -97,3 +97,8 @@ h3 {
 p, h1, h2, h3, .links {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Light shadow for better visibility */
 }
+
+p {
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
