@@ -3,27 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karaoke Dj Dracosia</title>
+    <title>Karaoke DJ Dracosia</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="STYLE.CSS">
+    <style>
+        body {
+            background-color: black; /* Set background to black */
+            font-family: 'Arial', sans-serif;
+            color: #fff; /* Set text color to white for contrast */
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #5c6bc0;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .oval-image {
+            border-radius: 50%;
+        }
+
+        .links {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+        .links:hover {
+            text-decoration: underline;
+        }
+
+        .event-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .event-section p {
+            font-size: 20px;
+            color: #6c757d;
+        }
+
+        hr {
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    <marquee behavior="scroll" direction="left"><h1> ⭐ 𝓒𝓸𝓶𝓮 𝓯𝓲𝓷𝓭 𝔂𝓸𝓾𝓻 𝓲𝓷𝓷𝓮𝓻 𝓼𝓽𝓪𝓻 ⭐ </h1></marquee>
 
-    <ul class="center-container">
-        <li><img class="oval-image" src="Pictures/img/karaoke dj.jpg" alt="karaoke image" width="400" height="280"></li>
-    </ul>
+    <!-- Scrolling text -->
+    <div class="bg-dark text-white py-3">
+        <h1 class="text-center">⭐ 𝓒𝓸𝓶𝓮 𝓯𝓲𝓷𝓭 𝔂𝓸𝓾𝓻 𝓲𝓷𝓷𝓮𝓻 𝓼𝓽𝓪𝓻 ⭐</h1>
+    </div>
 
-    <h1>★·.·´¯`·.·★ 𝓼𝓲𝓷𝓰 𝔂𝓸𝓾𝓻 𝓱𝓮𝓪𝓻𝓽 𝓸𝓾𝓽 ★·.·´¯`·.·★</h1>
-    <h2>Welcome to my karaoke Page 🎵🎤 </h2>
-    <h2>Upcoming events:</h2>
+    <!-- Image -->
+    <div class="center-container">
+        <img class="oval-image img-fluid" src="Pictures/img/karaoke dj.jpg" alt="karaoke image">
+    </div>
 
-    <div>
+    <!-- Main Headline -->
+    <h1>★·.·´¯`·.·★ 𝓼𝓲𝓷𝓖 𝓎𝓸𝓾𝓻 𝓱𝓮𝓪𝓻𝓽 𝓸𝓾𝓽 ★·.·´¯`·.·★</h1>
+    <h2>Welcome to my karaoke Page 🎵🎤</h2>
+
+    <!-- Upcoming Events Section -->
+    <div class="event-section">
+        <h2>Upcoming events:</h2>
         <p>Nothing planned yet.</p>
     </div>
 
-    <a class="links" href="https://www.facebook.com/profile.php?id=710150264">Karaoke DJ's Fanpage</a>
+    <!-- Facebook Fanpage Link -->
+    <a class="links" href="https://www.facebook.com/profile.php?id=710150264" target="_blank">Karaoke DJ's Fanpage</a>
 
-    <br>
     <hr>
+
+    <!-- Bootstrap JS and Popper.js (for Bootstrap components) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
