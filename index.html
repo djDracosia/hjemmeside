@@ -13,11 +13,17 @@
             background-color: black; /* Set background to black */
             font-family: 'Arial', sans-serif;
             color: #fff; /* Set text color to white for contrast */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            height: 100vh; /* Full viewport height */
+            margin: 0;
         }
 
         h1, h2 {
             text-align: center;
-            color: #5c6bc0;
+            color: #4ad7e4;
         }
 
         .center-container {
@@ -28,6 +34,9 @@
 
         .oval-image {
             border-radius: 50%;
+            width: 80%; /* Makes image responsive */
+            max-width: 400px; /* Ensure max size */
+            height: auto;
         }
 
         .links {
@@ -49,18 +58,52 @@
 
         .event-section p {
             font-size: 20px;
-            color: #6c757d;
+            color: #1b8983;
         }
 
         hr {
             margin-top: 40px;
+        }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .event-section p {
+                font-size: 1rem;
+            }
+
+            .links {
+                font-size: 16px;
+            }
+        }
+
+        /* Media Query for mobile screens */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            .links {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
 
     <!-- Scrolling text -->
-    <div class="bg-dark text-white py-3">
+    <div class="bg-dark text-white py-3 w-100">
         <h1 class="text-center">⭐ 𝓒𝓸𝓶𝓮 𝓯𝓲𝓷𝓭 𝔂𝓸𝓾𝓻 𝓲𝓷𝓷𝓮𝓻 𝓼𝓽𝓪𝓻 ⭐</h1>
     </div>
 
